@@ -3,6 +3,11 @@ A translation reference for Laravel and Django
 
 |   	|   Laravel 5.x	|   Django 1.9.x	|   Django Docs	|   	|
 |---	|---	|---	|---	|---	|
+|   **URLS**	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   Concept	|   All routes contained in `routes.php` <br>[[Docs](https://laravel.com/docs/5.3/routing#basic-routing)]	|   The convention is to create a URLconf	and import the views at `urls.py`|   [Urlconf](https://docs.djangoproject.com/en/1.10/topics/http/urls/#id4)	|
+|   Named Routes	|   `Route::get('user/profile', 'UserController@showProfile')->name('profile');`	|   `urlpatterns = [` <br>&nbsp;&nbsp;&nbsp;&nbsp;`url(r'^articles/2003/$', views.special_case_2003)`<br>`]`	|   [Named Groups](https://docs.djangoproject.com/en/1.10/topics/http/urls/#named-groups)	|
+|   	|   	|   	|   	|
 |  **Working with Models**	|   	|   	|   	|
 |       |   	|   	|   	|
 | Create |   ````Post::create($object);````	|   ````Post.objects.create(user=user, title=“Some title”)````	|   	|
